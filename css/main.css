@@ -1,1 +1,39 @@
-.
+body {
+	text-align: center;
+}
+div.box {
+	display: inline-block;
+	width: 24%;
+	height: 150px;
+}
+div.red {
+	background-color: red;
+}
+div.blue {
+	background-color: blue;
+}
+div.yellow {
+	background-color: yellow;
+}
+div.tomato {
+	background-color: tomato;
+}
+div.container.animated.fadeOut {
+	height: 150px;
+	width: 200px;
+	background-color: green;
+}
+@media (max-width: 600px) {
+	div.box.blue, div.box.tomato {
+		display: none;
+	}
+	
+	div.box.red, div.box.yellow {
+		width: 49%;
+	}
+}
+@media (min-width: 1000px) {
+	div.box {
+		width: 100%;
+	}
+}
